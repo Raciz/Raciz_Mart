@@ -1,0 +1,11 @@
+2018-03-18T20:22:35+00:00 CRITICAL Uncaught Exception: Undefined field id. in /var/www/html/wp-content/plugins/wp-all-import/models/model/record.php:148
+Stack trace:
+#0 /var/www/html/wp-content/plugins/wp-all-import/controllers/admin/import.php(2406): PMXI_Model_Record->__get('id')
+#1 /var/www/html/wp-content/plugins/wp-all-import/plugin.php(580): PMXI_Admin_Import->process()
+#2 /var/www/html/wp-includes/class-wp-hook.php(286): PMXI_Plugin->adminInit('')
+#3 /var/www/html/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#4 /var/www/html/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /var/www/html/wp-admin/admin.php(156): do_action('admin_init')
+#6 {main}
+  thrown
+
